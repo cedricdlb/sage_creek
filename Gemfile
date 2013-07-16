@@ -45,3 +45,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Use foreman (part of heroku toolbelt, I'm not sure why it's not here by default...)
+gem 'foreman'
+
