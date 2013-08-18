@@ -10,6 +10,9 @@ gem 'rails', '4.0.0.rc1'
 # For Heroku, use supplied PostgreSQL:
 gem 'pg'
 
+# Rails 4 requires rails_12factor in order to configure your application logs to be visible via heroku logs and to serve static assets:
+gem 'rails_12factor', group: :production
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
 
