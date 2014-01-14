@@ -5,9 +5,7 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
 
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
-# For Heroku, use supplied PostgreSQL:
+# Use PostgreSQL as the database for Active Record (for compatability with Heroku)
 gem 'pg'
 
 # Rails 4 requires rails_12factor in order to configure your application logs to be visible via heroku logs and to serve static assets:
@@ -51,6 +49,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# Use foreman (part of heroku toolbelt, I'm not sure why it's not here by default...)
-gem 'foreman'
+## Use foreman (part of heroku toolbelt, I'm not sure why it's not here by default...)
+## Revision: commenting out foreman, I don't know that I need to use it as a gem here, even with Heroku.  May be more of a command line tool use...
+#gem 'foreman'
 
