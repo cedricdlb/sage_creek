@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+body {
+  color: darkgreen;
+  font-size:12px;
+  font-family: 'Copperplate Gothic Light', Copperplate, Georgia, 'Lucida Sans Unicode', Serif;
+}
