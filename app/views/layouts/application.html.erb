@@ -7,8 +7,63 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!-- Header -->
+  <div id='top_nav_banner'>
+    <table id='top_nav_table' width="100%" border="0" cellspacing="0" cellpadding="0" align="right">
+      <tbody>
+        <tr id="homenav"> 
+	  <td>
+	    <a href="http://www.verdancedesign.com/about.html"
+	       class="about"
+	       title="Our people, philosophy, and design process, plus answers to frequently asked questions."
+	       onfocus="if (this.blur)this.blur();">
+              <span class="navtext">about</span>
+            </a>
+	  </td>
+          <td>
+	    <a href="http://www.verdancedesign.com/portfolio.html"
+	       class="portfolio"
+	       title="View samples of our designs and completed projects."
+	       onfocus="if (this.blur)this.blur();">
+              <span class="navtext">portfolio</span>
+            </a>
+	  </td>
+          <!--
+          <td>
+	    <a href="http://www.verdancedesign.com/resources.html"
+	       class="resources"
+	       title="On- and off-line sources for plants, site amenities, public gardens, and reference information."
+               onfocus="if (this.blur)this.blur();">
+              <span class="navtext">resources</span>
+            </a>
+	  </td>
+          -->
+          <td>
+	    <a href="http://www.verdancedesign.com/sitemap.html"
+	       class="sitemap"
+	       title="A list of the contents of this site, www.verdancedesign.com."
+	       onfocus="if (this.blur)this.blur();">
+              <span class="navtext">sitemap</span>
+            </a>
+	  </td>
+          <td>
+	    <a href="http://www.verdancedesign.com/contact.html"
+	       class="contact"
+	       title="Get in touch with Verdance by email, phone, or post."
+	       onfocus="if (this.blur)this.blur();">
+              <span class="navtext">contact</span>
+            </a>
+	  </td>
+	  <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End Header -->
 
-<%= yield %>
+  <%= yield %>
 
+  <!-- Footer -->
+  <!-- End Footer -->
 </body>
 </html>
