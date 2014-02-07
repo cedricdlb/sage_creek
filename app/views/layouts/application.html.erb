@@ -8,13 +8,23 @@
 </head>
 <body>
   <!-- Header -->
+  <div id='top_logo_banner' width="100%">
+    <img src="<%=image_url('SageCreelHort.Logo.Interim.banner.2.jpg')%>" alt="Sage Creek Horticulture" width="100%"/>
+  </div>
   <div id='top_nav_banner'>
     <table id='top_nav_table' width="100%" border="0" cellspacing="0" cellpadding="0" align="right">
       <tbody>
         <tr id="homenav"> 
-<!--
 	  <td>
-	    <a href="http://www.verdancedesign.com/about.html"
+	    <a href="<%= root_url %>"
+	       class="home"
+	       title="Sage Creek Horticulture"
+	       onfocus="if (this.blur)this.blur();">
+              <span class="navtext">home</span>
+            </a>
+	  </td>
+	  <td>
+	    <a href="<%= pages_about_url %>"
 	       class="about"
 	       title="Our people, philosophy, and design process, plus answers to frequently asked questions."
 	       onfocus="if (this.blur)this.blur();">
@@ -22,14 +32,13 @@
             </a>
 	  </td>
           <td>
-	    <a href="http://www.verdancedesign.com/portfolio.html"
+	    <a href="<%= pages_portfolio_url %>"
 	       class="portfolio"
 	       title="View samples of our designs and completed projects."
 	       onfocus="if (this.blur)this.blur();">
               <span class="navtext">portfolio</span>
             </a>
 	  </td>
--->
           <!--
           <td>
 	    <a href="http://www.verdancedesign.com/resources.html"
@@ -39,8 +48,6 @@
               <span class="navtext">resources</span>
             </a>
 	  </td>
-          -->
-<!--
           <td>
 	    <a href="http://www.verdancedesign.com/sitemap.html"
 	       class="sitemap"
@@ -49,15 +56,15 @@
               <span class="navtext">sitemap</span>
             </a>
 	  </td>
+          -->
           <td>
-	    <a href="http://www.verdancedesign.com/contact.html"
+	    <a href="<%= pages_contact_url %>"
 	       class="contact"
 	       title="Get in touch with Verdance by email, phone, or post."
 	       onfocus="if (this.blur)this.blur();">
               <span class="navtext">contact</span>
             </a>
 	  </td>
--->
 	  <td>&nbsp;</td>
         </tr>
       </tbody>
