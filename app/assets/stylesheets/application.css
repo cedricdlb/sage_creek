@@ -13,7 +13,16 @@
  */
 
 body {
-  color: darkgreen;
+  color: navy;
   font-size:12px;
   font-family: 'Copperplate Gothic Light', Copperplate, Georgia, 'Lucida Sans Unicode', Serif;
+}
+
+.nav_banner_header .nav_div {
+  float: left;
+  text-align: center;
+}
+
+.nav_banner_header .nav_link {
+  display: inline-block;
 }

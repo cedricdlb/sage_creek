@@ -1,0 +1,37 @@
+
+<nav>
+  <div class='nav_banner<%=location ? "_#{location}" : "" %>' style="width:100%; text-align: center">
+    <% nav_elements = [
+         ["home",      root_url],
+	 ["about",     pages_about_url],
+	 ["portfolio", pages_portfolio_url],
+	 ["contact",   pages_contact_url],
+    ] %>
+    <% width = (!nav_elements || 0 == nav_elements.size ? 100 : 100/nav_elements.size).to_s + "%" %>
+    <% last_index = nav_elements.size - 1 %>
+    <% nav_elements.each_with_index do |(name, url), index| %>
+      <% if "header" == location %>
+      <div class="nav_div" name="<%=name%>"
+           <%= "style=width:#{width}" if "header" == location %>
+      >
+	<a href="<%=url%>" class="nav_link" title="<%=name%>"
+	   onfocus="if (this.blur)this.blur();">
+          <%=name%>
+        </a>
+      </div>
+      <% else %>
+	<a href="<%=url%>" class="nav_link" title="<%=name%>"
+	   onfocus="if (this.blur)this.blur();">
+          <%=name%>
+        </a>
+        <% if (index < last_index) %>
+          <span class="bottom_nav_separator">|</span>
+        <% end %>
+      <% end %>
+    <% end %>
+    <% if (location == "footer") %>
+      <br>
+      <a href="#top" class="top" title="back to top of page" onfocus="if (this.blur)this.blur();">back to top</a>
+    <% end %>
+  </div>
+</nav>
