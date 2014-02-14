@@ -18,6 +18,12 @@ body {
   font-family: 'Copperplate Gothic Light', Copperplate, Georgia, 'Lucida Sans Unicode', Serif;
 }
 
+.page_heading {
+  text-align: center;
+  margin-top: 2ex;
+  margin-bottom: 2ex;
+}
+
 .nav_banner_header .nav_div {
   float: left;
   text-align: center;
