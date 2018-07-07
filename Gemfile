@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.3.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.2.10'
 
 # Use PostgreSQL as the database for Active Record (for compatability with Heroku)
-gem 'pg'
+# gem 'pg'
 
 # Rails 4 requires rails_12factor in order to configure your application logs to be visible via heroku logs and to serve static assets:
 gem 'rails_12factor', group: :production
@@ -35,6 +35,15 @@ gem 'jbuilder', '~> 1.0.1'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :production do
+  gem 'pg', '~> 0.20'
+end
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails'
 end
 
 # Use ActiveModel has_secure_password
